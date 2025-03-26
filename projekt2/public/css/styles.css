@@ -1,0 +1,276 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #6d8daf;
+    max-width: 90%;
+    margin: auto;
+
+}
+
+header {
+    align-items: center;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e0e0e0;
+
+}
+
+main {
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+
+}
+
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 30px 0;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.search-form {
+    display: flex;
+    gap: 10px;
+    text-align: center;
+}
+
+.search-form input {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px; /* Szerokość paska wyszukiwania */
+}
+
+.search-form button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #6d8daf;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #0056b3;
+}
+
+input, textarea, button {
+    margin: 10px 0;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.range-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    background-color: #6d8daf;
+}
+
+/*input[type=range]::-webkit-slider-thumb {*/
+/*    background-color: #2f3a46;*/
+/*}*/
+
+.disabled-tab {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+.ingredient-item .row .form-control,
+.ingredient-item .row select {
+    margin-top: 0;
+}
+
+.ingredient-item .row label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+#stepsContent {
+    padding: 15px;
+}
+
+#flex_form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+    #flex_form {
+        margin: auto;
+        flex-direction: column;
+    }
+
+    #flex_stepsTabs {
+        width: 100%;
+        margin: auto;
+        max-width: none;
+
+    }
+
+    #stepsContent {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+#img-recipeDetails {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Podstawowy styl stopki */
+.footer {
+    position: relative;
+    padding: 20px 20px;
+    text-align: center;
+    color: white;
+    background-color: #3c546e;
+}
+
+/* Treść stopki */
+.footer-content {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    max-width: 70%;
+    position: relative;
+    z-index: 2; /* Treść nad tłem */
+}
+
+/* Styl linków społecznościowych */
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #9eb5de;
+}
+
+.newsletter-container {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background: white;
+    color: #4a4c4c;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 90%;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#news {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#news:hover {
+    background-color: #0056b3;
+}
+
+input[type="email"] {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="email"]:focus {
+    border-color: #007bff;
+}
+
+.logo-button {
+    border: none;
+    background: transparent;
+    padding: 0;
+}
+
+.logo-icon {
+    font-size: 3.5rem;
+    transition: background-color 0.3s ease-in-out, border-radius 0.3s;
+    padding: 5px;
+    border-radius: 20%;
+}
+
+.dropdown:hover .logo-icon {
+    background-color: #6d8daf;
+    color: white;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    left: auto !important;
+    right: 0 !important;
+}
+
+@media (max-width: 480px) {
+    .input-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    input[type="email"],
+    button {
+        width: 100%;
+    }
+
+}
+
+
+
+
+
